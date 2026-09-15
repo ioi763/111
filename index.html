@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal IP | 大學四年專案作品集</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- FontAwesome 圖標庫 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- 頂部導覽列 -->
+  <header class="navbar">
+    <div class="logo">PORTFOLIO<span>.</span></div>
+    <nav>
+      <ul>
+        <li><a href="#projects">專案成果</a></li>
+        <li><a href="#about">關於我</a></li>
+        <li><a href="#contact">聯絡方式</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero 形象區塊 -->
+  <section class="hero">
+    <div class="hero-content">
+      <span class="badge">Information & Media Communication</span>
+      <h1>探索資訊、媒體與品牌的<br/><span class="highlight">跨界溝通實踐</span></h1>
+      <p>記錄大學四年從基礎企劃、影音創作到品牌策略分析的完整成長歷程。</p>
+      <a href="#projects" class="btn primary-btn">瀏覽歷年作品 <i class="fa-solid fa-arrow-down"></i></a>
+    </div>
+  </section>
+
+  <!-- 作品集與篩選區塊 -->
+  <section id="projects" class="projects-section">
+    <div class="section-title">
+      <h2>四年的創作軌跡</h2>
+      <p>依據專案類型或年級進行篩選</p>
+    </div>
+
+    <!-- TypeScript 動態篩選按鈕區 -->
+    <div class="filter-container">
+      <button class="filter-btn active" data-filter="all">全部作品</button>
+      <button class="filter-btn" data-filter="brand">品牌策略</button>
+      <button class="filter-btn" data-filter="video">影音創作</button>
+      <button class="filter-btn" data-filter="web">數位媒體與網頁</button>
+    </div>
+
+    <!-- 作品卡片渲染區域 -->
+    <div class="projects-grid" id="projects-grid"></div>
+  </section>
+
+  <!-- 個人 IP 定位與技能 -->
+  <section id="about" class="about-section">
+    <div class="about-container">
+      <h2>關於這個個人 IP</h2>
+      <p>結合媒體素養、品牌轉型分析與視覺傳播，習慣以結構化思考探討數位內容如何影響大眾認知。</p>
+      <div class="skills-list">
+        <span class="tag">品牌溝通與策略</span>
+        <span class="tag">影音剪輯與企劃</span>
+        <span class="tag">視覺傳播設計</span>
+        <span class="tag">前端基礎 (HTML/SCSS/TS)</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 頁尾 -->
+  <footer id="contact">
+    <p>© 2026 Personal Portfolio. All Rights Reserved.</p>
+    <div class="socials">
+      <a href="#"><i class="fa-brands fa-github"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-solid fa-envelope"></i></a>
+    </div>
+  </footer>
+
+  <script src="dist/app.js"></script>
+</body>
+</html>
